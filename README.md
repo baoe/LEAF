@@ -57,7 +57,6 @@ Not available yet...
    --part is the number of parts a chromosome is divided into when it is loaded to reduce memory requirement (default: 1)
 
 5. Outputs
-
    * Extended contigs in FASTA format.
    * Remaining contigs not extended in FASTA format.
    
