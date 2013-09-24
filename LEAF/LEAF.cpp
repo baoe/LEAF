@@ -3049,7 +3049,7 @@ void print()
 	cout << "--remainingContig is the not extended initial contig file in fasta format" << endl;
 	cout << "Options:" << endl;
 	cout << "--kMer is the k-mer size (default: 5)" << endl;
-	cout << "--insertVariation is the standard variation of insert length (default: 100)" << endl;
+	cout << "--insertVariation is the standard variation of insert length (default: 50)" << endl;
 	cout << "--coverage is the minimum coverage to keep a path in de Bruijn graph (default: 20)" << endl;
 	cout << "--noAlignment skips the initial time-consuming alignment step, if all the alignment files have been provided in tmp directory (default: none)" << endl;
 	cout << "--part is the number of parts a chromosome is divided into when it is loaded to reduce memory requirement (default: 1)" << endl;
@@ -3062,7 +3062,7 @@ int main(int argc, char * argv[])
 //	vector<vector<Base> > genome;
 	string s, sCheck;
 	stringstream ssCheck;
-	int i, tagRead1 = 0, tagRead2 = 0, tagContig = 0, tagGenome = 0, tagExtendedContig = 0, tagKMer = 0, tagDistanceLow = 0, tagDistanceHigh = 0, tagNoAlignment = 1, k = 5, distanceLow = 0, distanceHigh = MAX, chromosomeID, numChromosomes, coverage = 20, tagCoverage = 0, mrl, mrl1, mrl2, tagInsertVariation = 0, insertVariation = 100, tagRemainingContig = 0, part = 1, tagPart = 0;
+	int i, tagRead1 = 0, tagRead2 = 0, tagContig = 0, tagGenome = 0, tagExtendedContig = 0, tagKMer = 0, tagDistanceLow = 0, tagDistanceHigh = 0, tagNoAlignment = 1, k = 5, distanceLow = 0, distanceHigh = MAX, chromosomeID, numChromosomes, coverage = 20, tagCoverage = 0, mrl, mrl1, mrl2, tagInsertVariation = 0, insertVariation = 50, tagRemainingContig = 0, part = 1, tagPart = 0;
 	time_t start, end, startAlign, endAlign;
 
 	cout << "LEAF: LEverAging reFerence genome to boost DNA-Seq assemblies" << endl;
